@@ -1,0 +1,367 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1577,2866" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:str="clr-namespace:System.Text.RegularExpressions;assembly=System.Text.RegularExpressions" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>UiPath.PDF</x:String>
+      <x:String>UiPath.PDF.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="630,2672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Double" Name="Sum">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Double" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="BotRunTime" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="Assign BotRunTime For Saving Files" sap:VirtualizedContainerService.HintSize="568,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[BotRunTime]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["ReceiptScraped@" + DateTime.now.ToString.Replace("/","-").Replace(":","")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:CommentOut sap2010:Annotation.AnnotationText="Only needed when overwriting existing files. DateTime in name allows for unique filename every time. &#xD;&#xA;" DisplayName="Comment Out Overwrite Existing Files" sap:VirtualizedContainerService.HintSize="568,112" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,244" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File Clear output.txt Lines" FileName="[BotRunTime + &quot;output.txt&quot;]" sap:VirtualizedContainerService.HintSize="388,133" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
+            <ui:WriteTextFile.Text>
+              <InArgument x:TypeArguments="x:String">
+                <Literal x:TypeArguments="x:String" Value="" />
+              </InArgument>
+            </ui:WriteTextFile.Text>
+          </ui:WriteTextFile>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:ForEachFileX DisplayName="For Each File in Folder Receipts in Receipts Folder" Filter="*.pdf" Folder="C:\Users\cwong2\OneDrive - Deloitte (O365D)\Documents\UiPath\7RPARobots\Robot6_OCR\ScannedReceipts" sap:VirtualizedContainerService.HintSize="568,2287" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,2029" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch.Try>
+              <Sequence DisplayName="Do Extract PDF Info And Append To Text File Output" sap:VirtualizedContainerService.HintSize="496,1801" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="AllPDFText" />
+                  <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="EightConsecutiveDigits" />
+                  <Variable x:TypeArguments="x:String" Name="ExtractedReceiptID" />
+                  <Variable x:TypeArguments="x:String" Name="ExtractedTransactionID" />
+                  <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ListOfDates" />
+                  <Variable x:TypeArguments="x:String" Name="ExtractedDate" />
+                  <Variable x:TypeArguments="s:DateTime" Name="ExtractedDateFormatted" />
+                  <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ListOfCurrencyMatches" />
+                  <Variable x:TypeArguments="x:Double" Name="ExtractedSaleAmount" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CommentOut sap2010:Annotation.AnnotationText="Just an example of extracting individual elements one by one using OCR" DisplayName="Comment Out Read Individual PDF Elements" sap:VirtualizedContainerService.HintSize="434,67" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="546,1033" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Application PDF" sap:VirtualizedContainerService.HintSize="484,922" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="0e3e9342-7d43-43c9-b8db-137c0d4ddc36" Version="V2">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,631" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="ScrapedTotal" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts Zoom Out" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="WindowMessages" ScopeIdentifier="0e3e9342-7d43-43c9-b8db-137c0d4ddc36" Shortcuts="[d(hk)][d(ctrl)]0[u(ctrl)][u(hk)]" Version="V3" />
+                              <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text Sale Amount" sap:VirtualizedContainerService.HintSize="388,172" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+                                <ui:GetOCRText.OCREngine>
+                                  <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                                    <ActivityFunc.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                                    </ActivityFunc.Argument>
+                                    <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR Engine Legacy" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" NoopExecution="False" />
+                                  </ActivityFunc>
+                                </ui:GetOCRText.OCREngine>
+                                <ui:GetOCRText.Target>
+                                  <ui:Target Element="{x:Null}" Id="35a65b8c-3a29-4150-9c52-7d5821de4227" InformativeScreenshot="7b9856a71cd3221ec5cdcd96724ab2d0" Selector="&lt;wnd cls='UIX:Window' idx='2' /&gt;&lt;ctrl automationid='0@' idx='2' role='pane' /&gt;">
+                                    <ui:Target.ClippingRegion>
+                                      <ui:Region Rectangle="351, 906, 228, 48" />
+                                    </ui:Target.ClippingRegion>
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:GetOCRText.Target>
+                                <ui:GetOCRText.Text>
+                                  <OutArgument x:TypeArguments="x:String">[ScrapedTotal]</OutArgument>
+                                </ui:GetOCRText.Text>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:GetOCRText>
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box ScrapedTotal" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[ScrapedTotal]" />
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="-8, -8, 2576, 1416" Arguments="[CurrentFile.FullName]" FilePath="C:\Program Files\Tracker Software\PDF Editor\pdfxedit.exe" IconBase64="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" InformativeScreenshot="6196e3cadc0e27fa2b195c26f3e153f1.png" Selector="&lt;wnd app='pdfxedit.exe' cls='PXE:{C*AD*E*B1E*D8AF3B9D}' title='receipt-petrol*' /&gt;" Title="receipt-petrol-1654778561.png - PDF-XChange Editor" />
+                        </uix:NApplicationCard.TargetApp>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:CommentOut>
+                <ui:ReadPDFWithOCR DegreeOfParallelism="-1" DisplayName="Read PDF With OCR" FileName="[CurrentFile.FullName]" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="ReadPDFWithOCR_1" ImageDpi="150" Range="All" Text="[AllPDFText]">
+                  <ui:ReadPDFWithOCR.OCREngine>
+                    <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                      <ActivityFunc.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                      </ActivityFunc.Argument>
+                      <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR Engine" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="GoogleOCR_2" Image="[Image]" Invert="False" Language="eng" NoopExecution="False" Profile="Scan" Scale="2" />
+                    </ActivityFunc>
+                  </ui:ReadPDFWithOCR.OCREngine>
+                </ui:ReadPDFWithOCR>
+                <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(\d{8})" DisplayName="Find Matching Patterns EightConsecutiveDigits" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[AllPDFText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;8&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d{8})" RegexOption="IgnoreCase, Compiled" Result="[EightConsecutiveDigits]" />
+                <Assign DisplayName="Assign ExtractedReceiptID" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ExtractedReceiptID]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[EightConsecutiveDigits.First.ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Assign ExtractedTransactionID" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ExtractedTransactionID]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[EightConsecutiveDigits.Last.ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:Matches FirstMatch="{x:Null}" DisplayName="Find Matching Patterns ListOfDates" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[AllPDFText]" IsBuilderTabModified="False" Pattern="(\d{2})\/(\d{2})\/(\d{4})" RegexOption="IgnoreCase, Compiled" Result="[ListOfDates]" />
+                <Assign DisplayName="Assign ExtractedDate" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ExtractedDate]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[ListOfDates.First.ToString]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Assign ExtractedDateFormatted" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="s:DateTime">[ExtractedDateFormatted]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="s:DateTime">[DateTime.ParseExact(ExtractedDate,"MM/dd/yyyy",System.Globalization.CultureInfo.CurrentUICulture.DateTimeFormat)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:Matches FirstMatch="{x:Null}" BuilderPattern="(\d+).(\d{2})" DisplayName="Find Matching Patterns ListOfCurrencyMatches" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Matches_3" Input="[AllPDFText]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:1,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;.&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null},{&quot;Index&quot;:2,&quot;OperationID&quot;:&quot;DIG&quot;,&quot;OperationName&quot;:&quot;Digit&quot;,&quot;OperationValue&quot;:&quot;\\d&quot;,&quot;QuantifierFirstValue&quot;:&quot;2&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="(\d+)\.(\d{2})" RegexOption="IgnoreCase, Compiled" Result="[ListOfCurrencyMatches]" />
+                <Assign DisplayName="Assign ExtractedSaleAmount" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Double">[ExtractedSaleAmount]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(ListOfCurrencyMatches.Last.ToString)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Assign - Sum Sale Amount" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Double">[Sum]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Double">[Sum + ExtractedSaleAmount]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <ui:AppendLine File="{x:Null}" DisplayName="Append Line output.txt" FileName="[BotRunTime + &quot;output.txt&quot;]" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;Receipt ID: &quot; + ExtractedReceiptID + &quot; | Receipt Date: &quot; + ExtractedDateFormatted.ToString(&quot;d MMMM yyyy&quot;) + &quot; | Sale Amount: &quot; + ExtractedSaleAmount.ToString + &quot; | Sum Amount: &quot; + Sum.ToString]" UseDefaultEncoding="False" />
+                <ui:LogMessage DisplayName="Log Message Successful Receipt ID" sap:VirtualizedContainerService.HintSize="434,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Successfully Processed Receipt ID: &quot; + ExtractedReceiptID]" />
+              </Sequence>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <ui:LogMessage DisplayName="Log Message Exception" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[exception.Message]" />
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+          </TryCatch>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachFileX>
+  </Sequence>
+</Activity>
